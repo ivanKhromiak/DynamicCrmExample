@@ -1,0 +1,215 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Account" OriginalName="">Account</Name>
+      <EntityInfo>
+        <entity Name="Account">
+          <attributes>
+            <attribute PhysicalName="new_isValidated">
+              <Type>bit</Type>
+              <Name>new_isvalidated</Name>
+              <LogicalName>new_isvalidated</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>0</AppDefaultValue>
+              <optionset Name="new_account_new_isvalidated">
+                <OptionSetType>bit</OptionSetType>
+                <IntroducedVersion>1.0.0.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="isValidated" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="0" Color="#0000ff">
+                    <labels>
+                      <label description="No" languagecode="1033" />
+                    </labels>
+                  </option>
+                  <option value="1" Color="#0000ff">
+                    <labels>
+                      <label description="Yes" languagecode="1033" />
+                    </labels>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="isValidated" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+          <EntitySetName>accounts</EntitySetName>
+          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
+          <IsBusinessProcessEnabled>1</IsBusinessProcessEnabled>
+          <IsRequiredOffline>0</IsRequiredOffline>
+          <IsInteractionCentricEnabled>1</IsInteractionCentricEnabled>
+          <IsCollaboration>0</IsCollaboration>
+          <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
+          <IsConnectionsEnabled>1</IsConnectionsEnabled>
+          <EntityColor>#794300</EntityColor>
+          <IsDocumentManagementEnabled>1</IsDocumentManagementEnabled>
+          <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
+          <IsOneNoteIntegrationEnabled>1</IsOneNoteIntegrationEnabled>
+          <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+          <IsSLAEnabled>0</IsSLAEnabled>
+          <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
+          <IsBPFEntity>0</IsBPFEntity>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <EntityMask>ActivityPointer</EntityMask>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
+          <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
+          <IsActivity>0</IsActivity>
+          <ActivityTypeMask></ActivityTypeMask>
+          <IsActivityParty>1</IsActivityParty>
+          <IsReplicated>1</IsReplicated>
+          <IsReplicationUserFiltered>1</IsReplicationUserFiltered>
+          <IsMailMergeEnabled>1</IsMailMergeEnabled>
+          <IsVisibleInMobile>1</IsVisibleInMobile>
+          <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
+          <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+          <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+          <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>
+          <MobileOfflineFilters>
+		&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
+			&lt;entity name="account"&gt;
+				&lt;filter type="and"&gt;
+					&lt;condition attribute="modifiedon" operator="last-x-days" value="10"/&gt;
+				&lt;/filter&gt;
+			&lt;/entity&gt;
+		&lt;/fetch&gt;
+	</MobileOfflineFilters>
+          <IsMapiGridEnabled>1</IsMapiGridEnabled>
+          <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+          <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+          <SyncToExternalSearchIndex>1</SyncToExternalSearchIndex>
+          <IntroducedVersion>5.0.0.0</IntroducedVersion>
+          <EnforceStateTransitions>0</EnforceStateTransitions>
+          <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
+          <IsEnabledForExternalChannels>1</IsEnabledForExternalChannels>
+          <IsSolutionAware>0</IsSolutionAware>
+          <HasRelatedNotes>True</HasRelatedNotes>
+          <HasRelatedActivities>True</HasRelatedActivities>
+        </entity>
+      </EntityInfo>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings>
+    <sales>
+      <useinbuiltrulefordefaultpricelistselection>True</useinbuiltrulefordefaultpricelistselection>
+      <maxproductsinbundle>15</maxproductsinbundle>
+      <oobpricecalculationenabled>True</oobpricecalculationenabled>
+      <discountcalculationmethod>0</discountcalculationmethod>
+      <maximumdynamicpropertiesallowed>50</maximumdynamicpropertiesallowed>
+      <createproductswithoutparentinactivestate>False</createproductswithoutparentinactivestate>
+    </sales>
+  </OrganizationSettings>
+  <optionsets />
+  <CustomControls />
+  <SolutionPluginAssemblies>
+    <PluginAssembly FullName="TestTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4fea7440c66e0d45" PluginAssemblyId="578778a4-79bb-4ec4-9a90-f3aa33c925e6" CustomizationLevel="1">
+      <IsolationMode>2</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/TestTask-578778A4-79BB-4EC4-9A90-F3AA33C925E6/TestTask.dll</FileName>
+      <PluginTypes>
+        <PluginType AssemblyQualifiedName="TestTask.AccountPlugin, TestTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4fea7440c66e0d45" PluginTypeId="eaf3ea2c-7748-4168-bac7-158856965475" Name="TestTask.AccountPlugin">
+          <FriendlyName>003c7bfe-47b3-4d51-bcd1-96d869144665</FriendlyName>
+        </PluginType>
+      </PluginTypes>
+    </PluginAssembly>
+  </SolutionPluginAssemblies>
+  <SdkMessageProcessingSteps>
+    <SdkMessageProcessingStep Name="TestTask.AccountPlugin: Create of account" SdkMessageProcessingStepId="{e5a50342-c6f2-ea11-a815-000d3a579cb1}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>TestTask.AccountPlugin, TestTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4fea7440c66e0d45</PluginTypeName>
+      <PluginTypeId>eaf3ea2c-7748-4168-bac7-158856965475</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <Description>TestTask.AccountPlugin: Create of account</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="TestTask.AccountPlugin: Update of account" SdkMessageProcessingStepId="{c6a5c859-c6f2-ea11-a815-000d3a579cb1}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>TestTask.AccountPlugin, TestTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4fea7440c66e0d45</PluginTypeName>
+      <PluginTypeId>eaf3ea2c-7748-4168-bac7-158856965475</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <Description>TestTask.AccountPlugin: Update of account</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+  </SdkMessageProcessingSteps>
+  <EntityDataProviders />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
